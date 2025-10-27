@@ -1,1 +1,138 @@
+---
+title: Projects
+icon: fa-code
+order: 4
+---
 
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <!-- Project card -->
+    <article class="project-card">
+      <a class="thumb" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener">
+        <img src="/assets/img/projects/project-1.jpg" alt="Project 1 preview" loading="lazy">
+      </a>
+      <div class="content">
+        <h3>Project Title One</h3>
+        <p class="desc">
+          Short 1–2 sentence description of the project. What it does, the key idea, and any notable results.
+        </p>
+        <div class="links">
+          <a class="btn" href="https://github.com/youruser/project-one" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn outline" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project card -->
+    <article class="project-card">
+      <a class="thumb" href="https://arxiv.org/abs/YYYY.YYYYY" target="_blank" rel="noopener">
+        <img src="/assets/img/projects/project-2.jpg" alt="Project 2 preview" loading="lazy">
+      </a>
+      <div class="content">
+        <h3>Project Title Two</h3>
+        <p class="desc">
+          A concise explanation of the problem you solved, the approach, and what’s unique about it.
+        </p>
+        <div class="links">
+          <a class="btn" href="https://github.com/youruser/project-two" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn outline" href="https://arxiv.org/abs/YYYY.YYYYY" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Duplicate the card block below for more projects -->
+    <article class="project-card">
+      <a class="thumb" href="https://arxiv.org/abs/ZZZZ.ZZZZZ" target="_blank" rel="noopener">
+        <img src="/assets/img/projects/project-3.jpg" alt="Project 3 preview" loading="lazy">
+      </a>
+      <div class="content">
+        <h3>Project Title Three</h3>
+        <p class="desc">
+          One-liner about goals, methods (e.g., robotics, CV, graphics), and outcomes/metrics if relevant.
+        </p>
+        <div class="links">
+          <a class="btn" href="https://github.com/youruser/project-three" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn outline" href="https://doi.org/xx.xxxx/xxxxx" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <a class="thumb" href="https://arxiv.org/abs/AAAA.AAAAA" target="_blank" rel="noopener">
+        <img src="/assets/img/projects/project-4.jpg" alt="Project 4 preview" loading="lazy">
+      </a>
+      <div class="content">
+        <h3>Project Title Four</h3>
+        <p class="desc">
+          Brief summary highlighting your role, stack (ROS, Unity, Python, etc.), and what’s cool about it.
+        </p>
+        <div class="links">
+          <a class="btn" href="https://github.com/youruser/project-four" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn outline" href="https://arxiv.org/abs/AAAA.AAAAA" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  /* --- Layout --- */
+  #projects { text-align: left; }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .projects-grid { grid-template-columns: 1fr; }
+  }
+
+  /* --- Card --- */
+  .project-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 0.75rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 0.9rem;
+    background: #fff;
+  }
+  .project-card .thumb {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .project-card .content h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .project-card .desc {
+    margin: 0 0 0.75rem;
+    color: #444;
+  }
+
+  /* --- Buttons --- */
+  .links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid #111;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn.outline { background: transparent; }
+</style>
