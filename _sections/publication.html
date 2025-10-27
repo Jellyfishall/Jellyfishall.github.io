@@ -24,18 +24,29 @@ icon: fa-book
 
 
 <style>
-  /* Local styling only, safe for Prologue theme */
+  /* Local styling to fix font weights and match Prologue aesthetics */
   .publication-item {
     margin-bottom: 1.2em;
     text-align: left;
-    
+    font-family: "Source Sans Pro", Arial, sans-serif;
   }
 
   .publication-item p {
     margin: 0;
-    line-height: 1.5em;
+    line-height: 1.6em;
     font-size: 0.95em;
     color: #333;
+    font-weight: 400; /* normal base weight */
+  }
+
+  .publication-item strong {
+    font-weight: 700; /* ensure true bold for author names */
+    color: #000; /* darker than body text */
+  }
+
+  .publication-item em {
+    color: #555;
+    font-style: italic;
   }
 
   .publication-item a {
@@ -45,9 +56,5 @@ icon: fa-book
 
   .publication-item a:hover {
     text-decoration: underline;
-  }
-
-  .publication-item em {
-    color: #555;
   }
 </style>
