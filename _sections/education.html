@@ -6,72 +6,58 @@ order: 3
 
 <a href="#" class="image featured"><!-- <img src="assets/images/pic08.jpg" alt="" /> --></a>
 
-<div class="row">
+<div class="education-item">
+  <h3>University of Edinburgh <span class="location">— Edinburgh, UK</span></h3>
+  <p class="degree">MSc by Research in Informatics</p>
+  <p class="focus">IPAB: Robotics, Computer Vision, Computer Graphics and Animation</p>
+  <p class="date">2022 – 2024</p>
+</div>
 
-  <!-- ===== University of Edinburgh ===== -->
-  <div class="6u 12u$(mobile)">
-    <div class="item edu">
-      <header>
-        <h3>University of Edinburgh</h3>
-      </header>
-      <p class="degree"><strong>MSc by Research in Informatics</strong></p>
-      <p class="focus">IPAB: Robotics, Computer Vision, Computer Graphics and Animation</p>
-      <p class="location">Edinburgh, UK</p>
-      <p class="date">2022 – 2024</p>
-    </div>
-  </div>
-
-  <!-- ===== University of Glasgow & UESTC ===== -->
-  <div class="6u 12u$(mobile)">
-    <div class="item edu">
-      <header>
-        <h3>University of Glasgow &amp; University of Electronic Science and Technology of China</h3>
-      </header>
-      <p class="degree"><strong>Bachelor of Engineering in Electronics and Electrical Engineering</strong></p>
-      <p class="location">Chengdu, China</p>
-      <p class="date">2018 – 2022</p>
-    </div>
-  </div>
-
+<div class="education-item">
+  <h3>University of Glasgow &amp; University of Electronic Science and Technology of China 
+    <span class="location">— Chengdu, China</span>
+  </h3>
+  <p class="degree">Bachelor of Engineering in Electronics and Electrical Engineering</p>
+  <p class="date">2018 – 2022</p>
 </div>
 
 <style>
-  /* --- Education section style (matches portfolio typography) --- */
-  .edu {
-    padding: 0.5em 0;
+  /* Clean, left-aligned education listing */
+  h2 {
+    font-weight: 700;
+    margin-bottom: 1em;
     text-align: left;
   }
 
-  .edu header h3 {
-    font-size: 1.05em;          /* same as project titles */
+  .education-item {
+    margin-bottom: 1.5em;
+    text-align: left;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+  }
+
+  .education-item h3 {
+    font-size: 1.1em;
     font-weight: 600;
-    margin: 0.3em 0 0.2em;
-    text-align: left;
+    margin-bottom: 0.3em;
   }
 
-  .edu .degree {
-    font-size: 0.9em;
-    color: #333;
-    margin: 0.1em 0;
-    text-align: left;
+  .education-item .location {
+    color: #888;
+    font-weight: 400;
   }
 
-  .edu .focus {
-    font-size: 0.9em;
+  .education-item .degree {
+    font-style: italic;
+    margin: 0.2em 0;
+  }
+
+  .education-item .focus {
+    margin: 0.2em 0;
     color: #555;
-    margin: 0.1em 0;
-    text-align: left;
   }
 
-  .edu .location,
-  .edu .date {
-    font-size: 0.85em;
+  .education-item .date {
     color: #777;
-    margin: 0.1em 0;
-    text-align: left;
-  }
-
-  @media (max-width: 860px) {
-    .edu { padding-bottom: 1em; }
+    font-size: 0.9em;
   }
 </style>
