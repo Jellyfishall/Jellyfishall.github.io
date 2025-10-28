@@ -39,6 +39,8 @@ author: Jinwei Zhang
 email: jinwei.zhang@postgrad.manchester.ac.uk
 avatar: assets/images/avatar.JPG
 
+accent_color: "#43b3e0"   # set this to your button color
+
 # You'll want to customize url and baseurl for your own site:
 baseurl: #"/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
