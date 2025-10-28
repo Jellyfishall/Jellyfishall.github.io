@@ -51,47 +51,5 @@
         <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
       {%- endfor -%}
     {%- endunless -%}
-    <!-- Add this hr + icon row at the very BOTTOM of the nav -->
-    <hr>
-
-    <!-- Social + CV row -->
-    <ul class="icons sidebar-icons">
-      {% if site.github_url %}
-        <li><a href="{{ site.github_url }}" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
-      {% endif %}
-      {% if site.email %}
-        <li><a href="mailto:{{ site.email }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-      {% endif %}
-      {% if site.linkedin_url %}
-        <li><a href="{{ site.linkedin_url }}" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-      {% endif %}
-
-      {% if site.cv_url %}
-        <!-- Small labeled button for CV -->
-        <li><a href="{{ site.cv_url | relative_url }}" class="button small" target="_blank" rel="noopener">Download CV</a></li>
-        {#– or use just 'CV' if you prefer –#}
-        {# <li><a href="{{ site.cv_url | relative_url }}" class="button small" target="_blank" rel="noopener">CV</a></li> #}
-      {% endif %}
     </ul>
-
-    <style>
-      /* Keep this local to the nav only */
-      #nav .sidebar-icons {
-        text-align: left;
-        padding: 0.75em 1.25em 1.25em 1.25em;
-        margin: 0;
-      }
-      #nav .sidebar-icons li {
-        margin: 0 0.3em 0.3em 0; /* tighter spacing so the small button aligns nicely with icons */
-      }
-      #nav .sidebar-icons .button.small {
-        font-size: 0.8em;
-        padding: 0.35em 0.8em;
-        border-radius: 4px;
-        text-transform: none; /* keep readable label */
-      }
-    </style>
-
-
-  </ul>
 </nav>
