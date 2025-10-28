@@ -52,16 +52,20 @@
       {%- endfor -%}
     {%- endunless -%}
     <style>
-      /* Change menu (sidebar) icon colors to match button color */
-      #nav .icon,
-      #nav .icon-b,
-      #nav .icon-r {
-        color: #1a73e8 !important; /* same as button blue */
+      /* Change only the icon color, not the text */
+      #nav .icon:before,
+      #nav .icon-b:before,
+      #nav .icon-r:before {
+        color: #1a73e8 !important; /* button blue */
       }
     
-      /* Optional: change hover color slightly darker */
-      #nav a:hover .icon,
-      #nav a.active .icon {
+      /* Optional hover/active state to match button hover */
+      #nav a:hover .icon:before,
+      #nav a.active .icon:before,
+      #nav a:hover .icon-b:before,
+      #nav a.active .icon-b:before,
+      #nav a:hover .icon-r:before,
+      #nav a.active .icon-r:before {
         color: #155ab6 !important;
       }
     </style>
