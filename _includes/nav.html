@@ -51,5 +51,20 @@
         <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
       {%- endfor -%}
     {%- endunless -%}
+    <style>
+      /* Change menu (sidebar) icon colors to match button color */
+      #nav .icon,
+      #nav .icon-b,
+      #nav .icon-r {
+        color: #1a73e8 !important; /* same as button blue */
+      }
+    
+      /* Optional: change hover color slightly darker */
+      #nav a:hover .icon,
+      #nav a.active .icon {
+        color: #155ab6 !important;
+      }
+    </style>
+
     </ul>
 </nav>
