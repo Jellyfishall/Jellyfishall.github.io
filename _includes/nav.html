@@ -52,23 +52,29 @@
       {%- endfor -%}
     {%- endunless -%}
     <style>
-      /* Change only the icon color, not the text */
+      /* Sidebar icon colors: black by default, accent when active */
       #nav .icon:before,
       #nav .icon-b:before,
       #nav .icon-r:before {
-        color: #1a73e8 !important; /* button blue */
+        color: #111 !important;      /* default (unselected) = black */
       }
     
-      /* Optional hover/active state to match button hover */
-      #nav a:hover .icon:before,
+      /* Active/selected menu item uses the site accent color (same as buttons) */
       #nav a.active .icon:before,
-      #nav a:hover .icon-b:before,
       #nav a.active .icon-b:before,
-      #nav a:hover .icon-r:before,
       #nav a.active .icon-r:before {
-        color: #155ab6 !important;
+        color: {{ site.accent_color }} !important;
       }
+    
+      /* Optional: if you also want hover to use the accent, uncomment this:
+      #nav a:hover .icon:before,
+      #nav a:hover .icon-b:before,
+      #nav a:hover .icon-r:before {
+        color: {{ site.accent_color }} !important;
+      }
+      */
     </style>
+
 
     </ul>
 </nav>
