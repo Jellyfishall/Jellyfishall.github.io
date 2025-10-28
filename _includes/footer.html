@@ -1,6 +1,20 @@
 <!-- Footer -->
 <div id="footer">
-  
+
+  <!-- Social + CV links -->
+<ul class="icons">
+  {% if site.github_url %}<li><a href="{{ site.github_url }}" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>{% endif %}
+  {% if site.linkedin_url %}<li><a href="{{ site.linkedin_url }}" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>{% endif %}
+  {% if site.email %}<li><a href="mailto:{{ site.email }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>{% endif %}
+  {% if site.cv_url %}
+    <li>
+      <a href="{{ site.cv_url | relative_url }}" class="icon solid fa-file-pdf" target="_blank" title="Download CV">
+        <span class="label">Download CV</span>
+      </a>
+    </li>
+  {% endif %}
+</ul>
+
   <!-- Copyright -->
   <ul class="copyright">
     {% if site.title or site.author %}
