@@ -51,5 +51,33 @@
         <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
       {%- endfor -%}
     {%- endunless -%}
+    <!-- Small Download CV button -->
+<div class="cv-button">
+  <a href="{{ site.cv_url | relative_url }}" class="button small" target="_blank" rel="noopener">
+    Download CV
+  </a>
+</div>
+
+<style>
+  /* Local styling for sidebar CV button */
+  .cv-button {
+    text-align: left;            /* keep it aligned with other sidebar text */
+    padding: 0.8em 1em 0 1.5em;  /* match sidebar spacing */
+  }
+
+  .cv-button .button.small {
+    font-size: 0.8em;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    text-transform: none;
+  }
+
+  /* optional: adjust color hover to match theme buttons */
+  .cv-button .button.small:hover {
+    background-color: #1a73e8;
+    color: #fff !important;
+  }
+</style>
+
   </ul>
 </nav>
