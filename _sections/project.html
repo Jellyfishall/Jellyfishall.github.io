@@ -16,21 +16,31 @@ order: 5
   <div class="6u 12u$(mobile)">
 
     <div class="item project">
-      <a href="#" class="image fit">
-        <img src="{{ 'assets/images/affect-consistence.png' | relative_url }}" alt="Affect-consistent robot decision & behaviour model" loading="lazy" />
-      </a>
-      <header><h4>Enhance Interpretability: A Bio-Inspired Affect-Consistent Robot Decision & Behaviour Integrated Generation Model</h4></header>
-      <!-- <p class="meta">MRes Student — University of Edinburgh (Supervisor: Michael Herrmann) • Edinburgh, UK • Oct 2022 – Jan 2024</p> -->
+
+      <div class="project-carousel">
+        <div class="slides">
+          <img src="{{ 'assets/images/affect-consistence.png' | relative_url }}" alt="Affect-consistent robot decision & behaviour model">
+
+          <video controls preload="metadata">
+            <source src="{{ 'assets/files/AROM presentation video-behaviour.mov' | relative_url }}" type="video/quicktime">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <header>
+        <h4>Enhance Interpretability: A Bio-Inspired Affect-Consistent Robot Decision & Behaviour Integrated Generation Model</h4>
+      </header>
+
       <ul>
         <li>Proposed a framework for robots to react to external stimuli with emotional waves inspired by biological arousal mechanisms and physiology.</li>
         <li>Designed motion planning & decision-making mechanisms with emotional dynamics.</li>
         <li>Simulated & optimized the integrated model in HRI scenarios using ROS & Gazebo.</li>
       </ul>
+
       <p class="links">
         <a href="https://github.com/Jellyfishall/AROM" target="_blank">GitHub</a> |
-        <a href="{{ 'assets/files/Informatics_MSc_Dissertation.pdf' | relative_url }}" target="_blank">Paper</a> |
-        <a href="{{ 'assets/files/AROM presentation video-behaviour.mov' | relative_url }}" target="_blank">Video</a>
-           
+        <a href="{{ 'assets/files/Informatics_MSc_Dissertation.pdf' | relative_url }}" target="_blank">Paper</a>
       </p>
     </div>
        
