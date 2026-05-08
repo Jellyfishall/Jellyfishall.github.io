@@ -19,15 +19,22 @@ order: 5
 
       <div class="project-carousel">
         <div class="slides">
-          <img src="{{ 'assets/images/affect-consistence.png' | relative_url }}" alt="Affect-consistent robot decision & behaviour model">
 
-          <video controls preload="metadata">
-            <source src="{{ 'assets/files/AROM presentation video-behaviour.mov' | relative_url }}" type="video/quicktime">
-            Your browser does not support the video tag.
-          </video>
+          <div class="slide">
+            <img src="{{ 'assets/images/affect-consistence.png' | relative_url }}"
+                alt="Affect-consistent robot decision & behaviour model"
+                loading="lazy" />
+          </div>
+
+          <div class="slide">
+            <video controls preload="metadata">
+              <source src="{{ 'assets/files/arom-behaviour.mp4' | relative_url }}" type="video/mp4">
+            </video>
+          </div>
+
         </div>
       </div>
-
+         
       <header>
         <h4>Enhance Interpretability: A Bio-Inspired Affect-Consistent Robot Decision & Behaviour Integrated Generation Model</h4>
       </header>
