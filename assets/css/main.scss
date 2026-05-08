@@ -2,3 +2,24 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import "jekyll-theme-prologue";
+.project-carousel {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 1em;
+}
+
+.project-carousel .slides {
+  display: flex;
+  gap: 1em;
+}
+
+.project-carousel img,
+.project-carousel video {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  border-radius: 8px;
+}
