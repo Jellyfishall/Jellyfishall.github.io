@@ -57,7 +57,7 @@ order: 5
         <a href="{{ 'assets/files/s12369-025-01345-z.pdf' | relative_url }}" target="_blank">Paper</a>
       </p>
     </div>
-
+<!--
     <div class="item project">
       <div class="project-carousel">
         <div class="slides">
@@ -112,7 +112,7 @@ order: 5
       </ul>
     </div>
 
-<!--
+
     <div class="item project">
       <div class="project-carousel">
         <div class="slides">
@@ -145,7 +145,7 @@ order: 5
                  loading="lazy" />
           </div>
           <div class="slide">
-            <img src="{{ 'assets/images/3.png' | relative_url }}"
+            <img src="{{ 'assets/images/HCC_1.png' | relative_url }}"
                  alt="Additional figure for HCC and HMC review"
                  loading="lazy" />
           </div>
@@ -166,7 +166,7 @@ order: 5
         <a href="{{ 'assets/files/Publication_HCC.pdf' | relative_url }}" target="_blank">Paper</a>
       </p>
     </div>
-
+<!--
     <div class="item project">
       <div class="project-carousel">
         <div class="slides">
@@ -194,7 +194,7 @@ order: 5
       </ul>
     </div>
 
-<!--
+
     <div class="item project">
       <div class="project-carousel">
         <div class="slides">
@@ -229,29 +229,37 @@ order: 5
       <div class="project-carousel">
         <div class="slides">
           <div class="slide">
-            <img src="{{ 'assets/images/rover.JPG' | relative_url }}"
-                 alt="Intelligent tracking multi-function rover"
-                 loading="lazy" />
+            <video controls preload="metadata">
+              <source src="{{ 'assets/files/V4_Promotional Video_Team10.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="slide">
-            <img src="{{ 'assets/images/5.png' | relative_url }}"
-                 alt="Additional result for intelligent tracking multi-function rover"
-                 loading="lazy" />
+            <video controls preload="metadata">
+              <source src="{{ 'assets/files/Group10_Technical_Evaluation.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
 
       <header>
-        <h4>Intelligent Tracking Multi-Function Rover</h4>
+      <h4>Autonomous Perception-Driven Exploration & Pick-and-Place Robotic System</h4>
       </header>
 
       <ul>
-        <li><strong>Goal:</strong> build a rover capable of color-based tracking, navigation, and task execution with an integrated fish-feeding mechanism.</li>
-        <li><strong>My contribution:</strong> architected the software workflow for color-matching navigation, laptop communication, and the embedded control pipeline.</li>
-        <li><strong>Implementation:</strong> developed on STM32CubeIDE with STM32F446RE, assembled the mechanical feeding device, and tuned color recognition/tracking to improve accuracy from about 30% to over 90%.</li>
+        <li><strong>Goal:</strong> Develop an autonomous mobile robotic system capable of executing a complete “sense-plan-act” pipeline in an unknown environment, including SLAM-based exploration, perception-driven object recognition, navigation, and manipulation for colour-matching pick-and-place tasks.</li>
+        <li><strong>My Contribution:</strong> Designed and implemented the perception subsystem using depth-camera-based computer vision to recognise target blocks, bins, bin openings, and platforms. Developed object-attribute classification for colours and shapes, and published recognised object coordinates to the integrated ROS2 robotic framework for downstream navigation and manipulation.</li>
+        <li><strong>Implementation:</strong> Built a real-time perception pipeline using ROS2, depth sensing, and deep-learning-based object detection/classification. Integrated coordinate transformation and object-pose publishing into the autonomous robotic architecture, enabling robust environment understanding and task execution in simulated and real-world robotic scenarios.</li>
       </ul>
+
+      <p class="links">
+        <a href="https://github.com/MJF2003/RSDPTeam10/tree/main" target="_blank">GitHub</a>
+      </p>
+
     </div>
 
+<!--
     <div class="item project">
       <div class="project-carousel">
         <div class="slides">
@@ -281,13 +289,41 @@ order: 5
       <p class="links">
         <a href="{{ 'assets/files/Cambridge_Reinforcement Learning.pdf' | relative_url }}" target="_blank">PPT</a>
       </p>
+    
     </div>
-
+  -->
   </div>
 
   <!-- Col 2 -->
   <div class="6u 12u$(mobile)">
 
+    <div class="item project">
+      <div class="project-carousel">
+        <div class="slides">
+          <div class="slide">
+            <img src="{{ 'assets/images/rover.JPG' | relative_url }}"
+                 alt="Intelligent tracking multi-function rover"
+                 loading="lazy" />
+          </div>
+          <div class="slide">
+            <img src="{{ 'assets/images/rover_1.jpeg' | relative_url }}"
+                 alt="Intelligent tracking multi-function rover"
+                 loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <header>
+        <h4>Intelligent Tracking Multi-Function Rover</h4>
+      </header>
+
+      <ul>
+        <li><strong>Goal:</strong> build a rover capable of color-based tracking, navigation, and task execution with an integrated fish-feeding mechanism.</li>
+        <li><strong>My contribution:</strong> architected the software workflow for color-matching navigation, laptop communication, and the embedded control pipeline.</li>
+        <li><strong>Implementation:</strong> developed on STM32CubeIDE with STM32F446RE, assembled the mechanical feeding device, and tuned color recognition/tracking to improve accuracy from about 30% to over 90%.</li>
+      </ul>
+    </div>
+<!--
     <div class="item project">
       <div class="project-carousel">
         <div class="slides">
@@ -318,7 +354,7 @@ order: 5
         <a href="{{ 'assets/files/Stanford_Room Classification.pdf' | relative_url }}" target="_blank">Report</a>
       </p>
     </div>
-
+    -->
   </div>
 </div>
 
